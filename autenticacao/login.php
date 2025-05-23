@@ -13,9 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $resultado = $stmt->get_result();
     $usuario = $resultado->fetch_assoc();
 
+
     if ($usuario && password_verify($senha, $usuario['senha'])) {
         $_SESSION['usuario'] = $usuario;
-        header("Location: dashboard.php");
+        header("Location: ../user/user.php");
         exit;
     } else {
         $erro = "Credenciais inválidas!";

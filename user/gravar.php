@@ -10,6 +10,7 @@ include('conecta.php');
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
     $senha = $_POST['senha'];
+    $cpf = $_POST['cpf'];
     $setor = $_POST['setor'];
     $nascimento = $_POST['nascimento'];
     $biografia = $_POST['biografia'];

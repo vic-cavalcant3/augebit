@@ -56,10 +56,10 @@ include('conecta.php');
 
 $resultado = $mysqli->query($query);
 
-if ($resultado) {
-    echo "<script>alert('Perfil atualizado com sucesso!!') </script>";
-  } else {
-    echo "<script>alert('Erro ao conectar com o banco de dados " . $mysqli->error . "');</script>";
-  }
+// if ($resultado) {
+//     echo "<script>alert('Perfil atualizado com sucesso!!') </script>";
+//   } else {
+//     echo "<script>alert('Erro ao conectar com o banco de dados " . $mysqli->error . "');</script>";
+//   }
  
 $mysqli->close();

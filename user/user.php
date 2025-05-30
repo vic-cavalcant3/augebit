@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +6,6 @@
   <title>Meu Perfil - AUGEBIT</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  
   <script>
     tailwind.config = {
       theme: {
@@ -96,7 +92,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Nome completo*</label>
-                <input type="text" name="nome" value="<?= htmlspecialchars($usuario['nome'] ?? '' )?>" readonly 
+                <input type="text" name="nome"  value=""  readonly 
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
@@ -108,7 +104,7 @@
 
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Setor</label>
-                <input type="text" name="setor" value=" "  readonly class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
+                <input type="text" name="setor" value="" readonly class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
               <div>
@@ -137,13 +133,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">E-mail principal*</label>
-                <input type="email" name="email" value= "<?= htmlspecialchars($usuario['nome'] ?? '' ) ?>" readonly 
+                <input type="email" name="email" value=""  readonly 
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">E-mail secundário</label>
-              <input type="email" name="email_secundario"  value=""
+              <input type="email" name="email_secundario" value=""
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 

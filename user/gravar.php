@@ -1,7 +1,12 @@
 <?php
+session_start(); // se estiver usando sessão
+include_once 'conexao.php';
 
-include('conecta.php');
+$id = $_SESSION['id']; // ou $_GET['id'] se estiver recebendo via URL
 
+$sql = "SELECT * FROM funcionarios WHERE id = $id";
+$resultado = mysqli_query($conn, $sql);
+$linha = mysqli_fetch_assoc($resultado);
 ?>
 
 

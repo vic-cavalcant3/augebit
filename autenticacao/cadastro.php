@@ -139,7 +139,7 @@ select {
                 <input type="email" name="email" placeholder="E-mail corporativo" required>
             </div>
             <div class="form-group">
-                <input type="tel" name="telefone" placeholder="Telefone" " required>
+                <input type="tel" name="telefone" placeholder="Telefone"  required>
             </div>
             <div class="form-group">
                 <select name="setor" required>

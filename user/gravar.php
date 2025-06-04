@@ -192,19 +192,19 @@ if($_POST) {
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Nome completo*</label>
-                <input type="text" name="nome" value="<?= $funcionario['nome'] ?? '' ?>"  readonly 
+                <input type="text" name="nome"value="<?= $funcionario['nome'] ?? '' ?>" required 
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">CPF*</label>
-                <input type="text" name="cpf"value="<?= $funcionario['cpf'] ?? '' ?>" 
+                <input type="text" name="cpf"value="<?= $funcionario['cpf'] ?? '' ?>" required
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Setor</label>
-                <input type="text" name="setor" value="<?= $funcionario['setor'] ?? '' ?>" readonly class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Setor*</label>
+                <input type="text" name="setor" value="<?= $funcionario['setor'] ?? '' ?>" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
               <div>
@@ -233,7 +233,7 @@ if($_POST) {
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">E-mail principal*</label>
-                <input type="email" name="email"value="<?= $funcionario['email'] ?? '' ?>" readonly 
+                <input type="email" name="email"value="<?= $funcionario['email'] ?? '' ?>" required 
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
@@ -245,7 +245,7 @@ if($_POST) {
 
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Telefone*</label>
-                <input type="text" name="telefone"  value="<?= $funcionario['telefone'] ?? '' ?>" readonly 
+                <input type="text" name="telefone"  value="<?= $funcionario['telefone'] ?? '' ?>" required 
                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
               </div>
 
@@ -266,12 +266,11 @@ if($_POST) {
                   <label for = "inputcep" class="block text-sm font-medium text-gray-700 mb-1">CEP</label>
                   <input id = "inputcep" type="text" name="cep" value="<?= $funcionario['cep'] ?? '' ?>"
                          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
-                         <button onpress = "buscarCEP" id = "buttonCEP"> 
                 </div>
 
                 <div class="md:col-span-2">
                   <label for ="logradouro" class="block text-sm font-medium text-gray-700 mb-1">Logradouro</label>
-                  <input id = "logradouro" type="text" name="logadouro" value="<?= $funcionario['logradoro'] ?? '' ?>" 
+                  <input id = "logradouro" type="text" name="logadouro" value="<?= $funcionario['logradouro'] ?? '' ?>" 
                          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-primary-500 focus:border-primary-500">
                 </div>
 
